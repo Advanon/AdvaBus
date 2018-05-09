@@ -1,4 +1,6 @@
 # AdvaBus
+[ ![Download](https://api.bintray.com/packages/advanon/advanon/advabus/images/download.svg) ](https://bintray.com/advanon/advanon/advabus/_latestVersion)
+
 :bus: :bus: :bus: :bus: :bus: :bus: :bus:
 
 `AdvaBus` can be used to seamlessly integrate a `Spring Boot` application with a message bus implemented using [SQS](https://aws.amazon.com/sqs/) and [SNS](https://aws.amazon.com/sns/).
