@@ -21,7 +21,7 @@ plugins {
 
 def GROUP_ID = 'com.advanon'
 def ARTIFACT_ID = 'advabus'
-def VERSION = '0.1.0'
+def VERSION = '0.2.0'
 
 group GROUP_ID
 version VERSION
