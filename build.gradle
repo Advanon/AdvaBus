@@ -1,7 +1,8 @@
 buildscript {
-    ext.kotlin_version = '1.2.41'
-    ext.spring_cloud_version = '1.2.0.RELEASE'
-    ext.spring_boot_version = '1.5.7.RELEASE'
+    ext.kotlin_version = '1.2.71'
+    ext.spring_cloud_version = '2.0.0.RELEASE'
+    ext.spring_boot_version = '2.0.5.RELEASE'
+    ext.jackson_version = '2.9.7'
 
     repositories {
         mavenCentral()
@@ -20,7 +21,7 @@ plugins {
 
 def GROUP_ID = 'com.advanon'
 def ARTIFACT_ID = 'advabus'
-def VERSION = '0.1.0'
+def VERSION = '0.2.0'
 
 group GROUP_ID
 version VERSION
@@ -43,7 +44,7 @@ dependencies {
     compile "org.springframework.cloud:spring-cloud-aws-autoconfigure:$spring_cloud_version"
     compile "org.springframework.cloud:spring-cloud-aws-messaging:$spring_cloud_version"
 
-    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0'
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version"
 
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
