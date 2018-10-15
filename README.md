@@ -14,7 +14,7 @@ From from the `AWS` [docs](https://docs.aws.amazon.com/sns/latest/dg/SNS_Scenari
 repositories { jcenter() }
 
 dependencies {
-    compile 'com.advanon:advabus:0.1.0'
+    compile 'com.advanon:advabus:0.2.0'
 }
 ```
 
