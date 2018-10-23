@@ -30,6 +30,9 @@ private fun <T : Annotation> Any.getAnnotatedMethods(annotation: Class<T>): List
 
 private fun <T : Annotation> extractAnnotationAttribute(
     instance: AnnotatedElement,
-    annotation: Class<T>,
+    annotationType: Class<T>,
     attributeName: String
-): String? = getAnnotationAttributes(getAnnotation(instance, annotation))[attributeName]?.let { it as String }
+): String? {
+    val annotation = getAnnotation(instance, annotationType) ?: return null
+    return getAnnotationAttributes(annotation)[attributeName]?.let { it as String }
+}
