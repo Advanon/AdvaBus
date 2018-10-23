@@ -66,6 +66,10 @@ artifacts {
     archives sourcesJar
 }
 
+jar {
+    enabled = true
+}
+
 publishing {
     publications {
         AdvaBusPublication(MavenPublication) {
